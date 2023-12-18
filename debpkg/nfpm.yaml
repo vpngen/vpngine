@@ -1,0 +1,23 @@
+name: "vg-nacl"
+arch: "amd64"
+platform: "linux"
+version: 0.0.2
+section: "default"
+priority: "extra"
+release: 1
+
+provides:
+- vg-nacl
+
+maintainer: "Ingmund Ollson <ingmund@proton.me>"
+description: VPNGen nacl tool
+vendor: "VPNGen"
+homepage: "http://vpngen.org"
+license: "LGPL"
+
+contents:
+- src: bin/nacl
+  dst: /usr/bin/nacl
+deb:
+ compression: xz
+
